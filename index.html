@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+    <title>halberfans ESC Song!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <header>
+            <h1 class="header heading heading--3"><b>Dein ESC-2023-Lieblingssong</b></h1>
+        </header>
+        <p>
+            <b>Welcher Song ist besser?</b>
+            Das ist die Frage. Es werden dir Stück für Stück Songs in einer zufälligen Reihenfolge alle ESC Songs
+            angezeigt. Den, den du auswählst kommt in die nächste Runde. Der, der am Ende übrig bleibt, sollte dann
+            dein
+            Lieblingssong sein!
+        </p>
+        <div class="row">
+
+            <div class="col s6 section" id="colVid1">
+                <!-- Video 1-->
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align" style="display: none" id="winnerTitle1"><b>Dein Gewinner:</b>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="video-container">
+                            <iframe id="vidsrc1" src="https://www.youtube.com/embed/CxNiUxdJnTQ" title="Video 1"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen index=0></iframe>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Land: </b><span id="countryVid1">Norwegen</span></h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Song: </b><span id="songVid1">OH WOW</span></h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Künstler*in: </b><span id="artistVid1">Steffan Raab</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <p class="center-align">
+                                <a id="buttonSong1" class="waves-effect waves-light btn center-align">
+                                    <i class="material-icons left">favorite</i>Nice!</a>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 section" id="colVid2">
+                <!-- Video 2-->
+                <div class="row">
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align" style="display: none" id="winnerTitle2"><b>Dein Gewinner:</b>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col s12" id="rowVid2">
+                        <div class="video-container">
+                            <iframe id="vidsrc2" src="https://www.youtube.com/embed/CxNiUxdJnTQ" title="Video 2"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen index=0></iframe>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Land: </b><span id="countryVid2">Norwegen</span></h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Song: </b><span id="songVid2">OH WOW</span></h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <h6 class="center-align"><b>Künstler*in: </b><span id="artistVid2">Steffan Raab</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div>
+                            <p class="center-align">
+                                <a id="buttonSong2" class="waves-effect waves-light btn center-align">
+                                    <i class="material-icons left">favorite</i>Geil!</a>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class="progress">
+                    <div class="determinate" style="width: 0%" id="progressBar"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
